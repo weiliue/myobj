@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: calc(100*100vw/600);
+}
+body{
+    font-size: 0.2rem;
+}
+.head-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #DFE0E1;
+}
+.head{
+    height: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head img{
+    width: 0.4rem;
+    height: 0.4rem;
+}
+.head input{
+    width: 4.5rem;
+    height: 0.5rem;
+    border: 0;
+    padding: 0 0.5rem; 
+    box-sizing: border-box;
+}
+.input-icon{
+    position: absolute;
+    top: 0.25rem;
+    left: 0.8rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #DFE0E1;
+    font-size: 0.2rem;
+}
+.nav div{
+    margin: 0 0.1rem;
+    padding: 0.1rem 0;
+    flex-shrink: 0;
+     
+    color: #7C7E81;
+}
+.nav div:hover{
+    color: #FF6600;
+    border-bottom: 0.02rem solid #FF6600; 
+}
+.nav div:first-child{
+    color: #FF6600;
+    border-bottom: 0.02rem solid #FF6600; 
+}
+.nav-icon{
+    width: 0.5rem;
+    height: 0.4rem;
+    position: absolute;
+    top: 68%;
+    left: 90%;
+    font-size: 0;
+    text-align: center;
+    background-color: #DFE0E1;
+    /* border: 0.01rem solid red; */
+}
+.nav-icon img{
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+.content1{
+    margin-top: 1.28rem;
+}
+.content1 img{
+    width: 100%;
+}
+.content2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content2 div{
+    font-size: 0;
+    width: 20%;
+}
+.content2 img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.content-one{
+    width: 50%;
+    /* border: 0.01rem solid red; */
+}
+.content-phone{
+    font-size: 0.1rem;
+    text-align: center;
+    border-radius: 0.05rem;
+}
+.Tdiv1{
+    font-size: 0.2rem;
+    font-weight: bold;
+    margin-top: 0.3rem; 
+}
+.Tdiv2{
+    font-size: 0.18rem;
+}
+.Tdiv3{
+    font-size: 0.2rem;
+    color: #FF6600;
+    font-weight: bold;
+}
+.Tdiv4{
+    width: 60%;
+    height: 0.5rem;
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: bold;
+    background-color: #EA625B;
+    margin-bottom: 0.3rem; 
+}
+.content img{
+    width: 2.5rem;
+    height: 2.3rem;
+    margin-left: 0.26rem;
+    /* border: 0.05rem solid red; */
+}

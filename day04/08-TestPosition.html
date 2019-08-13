@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>练习定位</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .top{
+            position: relative;
+            margin: 10px 20px;
+        }
+        .top img{
+            position: absolute;
+            top: 7px;
+            left: 8px;
+            width: 18px;
+            height: 18px;
+        }
+        .top input{
+            width: 250px;
+            height: 30px;
+            padding-left: 30px; 
+            border-radius: 20px 20px;
+            background-color: #F4F4F4;
+            border: 0;
+            box-sizing: border-box; 
+        }
+        /* 消除聚焦 */
+        .top input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="img/sousuo.png" alt="">
+        <input type="text" placeholder="请输入商家名、品类或商品......">
+    </div>
+    
+</body>
+</html>

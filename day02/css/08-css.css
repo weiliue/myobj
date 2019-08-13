@@ -1,0 +1,9 @@
+div{
+    /* 设置边框总体样式 */
+    border: 1px solid #000;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    word-spacing: 30px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画效果</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* 名字 时间 线性 延迟 循环 交替反向运动*/
+            animation: mymove 1s ease-in 0.5s infinite alternate;
+        }
+        @keyframes mymove{
+            from{
+                left: 0;
+            }
+            to{
+                left: 500px;
+            }
+        }
+        /* @keyframes mymove{
+            0%{
+                left: 0;
+            }
+            50%{
+                left: 100px;
+            }
+            100%{
+                left: 200px;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>边框</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #f00;
+            /* 水平/垂直边框 */
+            border-radius: 50px/10px; 
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-top: 20px;
+            /* 达到阴影重叠效果 */
+            box-shadow: 2px 2px 4px 4px #ccc,2px 2px 4px 4px #ccc;
+        }
+        .box3{
+            width: 90px;
+            height: 38px;
+            background-color: #a52a2a;
+            margin-top: 20px;
+            color: #fff;
+            text-align: center;
+            line-height: 38px;
+            border-radius: 38px 0;
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            border: 27px solid #ccc;
+            /* 背景边框 */
+            border-image: url(img/border.png) 27 27 round;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3">圆角按钮</div>
+    <div class="box4"></div>
+    
+</body>
+</html>

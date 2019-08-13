@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>display</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid pink;
+            display: inline;/*块级元素转为行内元素，宽高会失效*/
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            border: 1px solid skyblue;
+            display: block;/*行内元素转为块级元素，可以设置宽高*/
+        }
+        a{
+            width: 50px;
+            height: 50px;
+            border: 1px solid deeppink;
+             /*行内元素转为行内块元素，可以设置宽高，在一行内显示*/
+            display: inline-block;  
+        }
+        p{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            /*块级元素转为行内块元素，可以设置宽高，在一行内显示*/
+            display: inline-block; 
+        }
+    </style>
+</head>
+<body>
+    <div>我是div</div>
+    <span>我是span</span>
+    <a href="#">空链接</a>
+    <p>这是内容</p>
+</body>
+</html>

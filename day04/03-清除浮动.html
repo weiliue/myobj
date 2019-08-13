@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>清除浮动</title>
+    <style>
+        .bigbox{
+            width: 800px;
+            /* height: 400px; */
+            background-color: #ccc;
+            margin: 0 auto;
+            /* overflow: hidden; */
+        }
+        .bigbox::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .bigbox div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-right: 10px; 
+            float: left;
+        }
+        /* .clear{
+            clear: both;
+        }
+
+        .mydiv1,.mydiv2,.mydiv3{
+            width: 200px;
+            height: 200px;
+        }
+        .mydiv1{
+            background-color: #ccc;
+        }
+        .mydiv2{
+            background-color: #f00;
+        }
+        .mydiv3{
+            background-color: #f0f;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 
+        1、给父盒子设置高度
+        2、clear: left right both
+        3、overflow: hidden;
+        4、伪元素清除浮动
+     -->
+    <div class="bigbox">
+        <div class="box1">div1</div>
+        <div class="box2">div2</div>
+        <div class="box3">div3</div>
+        <div class="box4">div4</div>
+    </div>
+    <!-- <div class="mydiv1">我是div1</div>
+    <div class="mydiv2">我是div2</div>
+    <div class="clear"></div>
+    <div class="mydiv3">我是div3</div> -->
+</body>
+</html>

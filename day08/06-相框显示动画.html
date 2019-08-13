@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>相框动画</title>
+    <style>
+        .box{
+            width: 440px;
+            height: 440px;
+            border: 40px solid #48495D;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .div1{
+            width: 350px;
+            height: 350px;
+            border: 20px solid rgba(124,130,106,0.5);
+            box-sizing: border-box;
+            margin: 5px;
+            transition: all 0.5s;
+        }
+        .div2{
+            width: 100%;
+            height: 100%;
+            border: 5px solid #fff;
+            box-sizing: border-box;
+            transition: all 0.5s;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0; 
+            z-index: -1;
+            transform: scale(1.2);
+            transition: all 0.5s;
+        }
+        .div1:hover img{
+            transform: scale(1);
+        }
+        .div1:hover .div2{
+            border: 0;
+        }
+        .div1:hover{
+            margin: 0;
+            border: 10px solid rgba(124,130,106,0.5);
+            width: 360px;
+            height: 360px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="div1">
+            <div class="div2">
+                <img src="http://www.diyifanwen.com/Files/BeyondPic/2008-10/20/08102023214770470.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

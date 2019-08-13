@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>类选择器</title>
+    <style>
+        .myclass{
+            text-decoration: underline;
+        }
+        .myli1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1、类名和标签里面class属性的值相对应
+        2、长词组可以用中横线连接，不要用_连接，不要用中文或纯数字命名，见名知意
+        3、一个类选择器可以对应多个标签
+        4、一个标签可以有多个类名
+     -->
+    <ul>
+        <li class="myclass myli1">列表1</li>
+        <li>列表2</li>
+    </ul>
+    <div class="myclass">我是div</div>
+</body>
+</html>

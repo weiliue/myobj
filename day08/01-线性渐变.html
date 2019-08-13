@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>线性渐变</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+        .box{
+            height: 100px;
+            /* background-color: #ccc; */
+            /* 默认渐变方向是从上到下 */
+            background: linear-gradient(red,pink,yellow);
+        }
+        .box2{
+            height: 100px;
+            /* 从左到右 */
+            background: linear-gradient(to right,red,pink,yellow);
+        }
+        .box3{
+            height: 100px;
+            /* 从左到右 */
+            background: linear-gradient(to bottom right,red,pink,yellow);
+        }
+        .box4{
+            height: 100px;
+            /* 从左到右 */
+            background: linear-gradient(45deg,red,pink,yellow);
+        }
+        .box5{
+            height: 100px;
+            /* 百分比 */
+            background: linear-gradient(red 10%,pink 45%,yellow 70%);
+        }
+        .box6{
+            height: 100px;
+            /* 使用透明度 */
+            background: linear-gradient(to right, rgba(255,0,0,1), rgba(0,0,255,0));
+        }
+        .box7{
+            height: 100px;
+            /* 重复透明 */
+            background: repeating-linear-gradient(to left,rgba(255,0,0,1), rgba(0,0,255,0));
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+</body>
+</html>

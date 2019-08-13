@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>移动端单位</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: calc(100*100vw/600);
+        }
+        .box{
+            width: 3rem;
+            height: 2rem;
+            /* 去除边框默认间隔 */
+            font-size: 0;
+        }
+        .box div{
+            width: 2rem;
+            height: 2rem;
+            background-color: #ccc;
+            display: inline-block;
+            font-size: 0.5rem;
+        }
+
+
+        .box{
+            width: 100vw;
+            height: 20vh;
+            /* 去除边框默认间隔 */
+            font-size: 0;
+        }
+        .box div{
+            width: 25vw;
+            height: 20vh;
+            background-color: #ccc;
+            display: inline-block;
+            font-size: 10vw;
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+       <div>div1</div>
+       <div>div2</div>
+       <div>div3</div>
+       <div>div4</div>
+   </div> 
+</body>
+</html>

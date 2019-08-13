@@ -1,0 +1,34 @@
+div{
+    /* 1.设置字体颜色 */
+    /* color: aqua; */
+    /* 十六进制 */
+    /* color: #251515; */
+    color: rgb(255, 45, 200);
+    /* text-align: center; */
+    text-decoration: overline;
+    font-size: 30px;
+    /* 文本阴影 */
+    text-shadow: 2px 2px 2px gray;
+    /* 文本方向 */
+    direction: rtl;
+    /* 设置字符间距 */
+    letter-spacing: 30px;
+}
+p{
+    text-align: justify;
+    /* 英文文本转换开头字母大小写 */
+    text-transform: capitalize;
+    font-size: 20px;
+    /* 文本缩进 em=20px*/
+    text-indent: 2em;
+}
+a{
+    text-decoration: none;   
+}
+del{
+    text-decoration: none;
+}
+li{
+    /* 字符串间距 */
+    word-spacing: 30px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>容器属性</title>
+    <style>
+        .box{
+            width: 400px;
+            background-color: aqua;
+            /* 设置为弹性布局 */
+            display: flex;
+            /* row是默认值 */
+            /* flex-direction: column; */
+            /* 设置项目换不换行 */
+            flex-wrap: wrap;
+            /* 设置项目在主轴方向的排列方式 */
+            /* justify-content: center; */
+            /* 设置项目在交叉轴方向的排列方式 */
+            /* align-items: center; */
+        }
+        .box div{
+            /* width: 100px;
+            height: 100px; */
+            /* 定义项目的放大比例，默认值为0 */
+            flex-grow: 1;
+            /* 项目等比放大比例 */
+            flex: 1;
+        }
+        .box div:first-child{
+            background-color: #ccc;
+            /* order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。 */
+            order: 2;
+        }
+        .box div:nth-child(2){
+            background-color: red;
+        }
+        .box div:last-child{
+            background-color: blue;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="box">
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            float: left;
+            list-style: none;
+        }
+        img{
+            width: 500px;
+            height: 350px;
+        }
+        ul{
+            width: 1500px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* 动画 */
+            animation: mymove 10s infinite;
+        }
+        div{
+            width: 500px;
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+        /* 百分之几相当于时间的百分比 */
+        @keyframes mymove {
+            0%,27%{
+                left: 0;
+            }
+            34%,61%{
+                left: -500px;
+            }
+            68%,100%{
+                left: -1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <img src="http://www.diyifanwen.com/Files/BeyondPic/2008-10/20/0810202321442647.jpg" alt="">
+            </li>
+            <li>
+                <img src="http://www.diyifanwen.com/Files/BeyondPic/2008-10/20/08102023304090239.jpg" alt="">
+            </li>
+            <li>
+                <img src="http://www.diyifanwen.com/Files/BeyondPic/2008-10/20/08102023141990377.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

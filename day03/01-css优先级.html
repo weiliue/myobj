@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css优先级</title>
+    <link rel="stylesheet" href="css/01-css.css">
+    <style>
+        div{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 行内样式 > 内部样式 > 外部样式 -->
+    <!-- 行内样式>id选择器>类选择器>标签选择器>通配符选择器>继承>浏览器默认样式 -->
+    <div class="mydiv1" style="color: red;">我是div</div>
+</body>
+</html>
